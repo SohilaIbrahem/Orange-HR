@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orange=HR]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value=""/>
+  <listeners>
+    <listener class-name="listener.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Check Registration With valid data(failed)">
+    <classes>
+      <class name="testcases.TC01_Login">
+        <methods>
+          <include name="loginWithValidCredientials_P"/>
+          <include name="setupChromeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.TC01_Login -->
+    </classes>
+  </test> <!-- Check Registration With valid data(failed) -->
+</suite> <!-- Failed suite [Orange=HR] -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Orange=HR">
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+
+    <parameter name="browser" value=""/>
+    <test  name="Check Login With valid data">
+        <classes>
+            <class name="testcases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidCredientials_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test  name="Check Admin page">
+        <classes>
+            <class name="testcases.TC02_AdminPageTest">
+                <methods>
+                    <include name="AdminPageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test  name="Check PIM page">
+        <classes>
+            <class name="testcases.TC04_PIMTest">
+                <methods>
+                    <include name="PIMTestPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test  name="Check Leave page">
+        <classes>
+            <class name="testcases.TC05_LeaveTest">
+                <methods>
+                    <include name="LeavePageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
